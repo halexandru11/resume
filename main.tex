@@ -1,0 +1,218 @@
+\documentclass[11pt]{spidercv}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TOP BAR
+%----------------------------------------------------------------------------------------
+\begin{TopBar}{\ColorTextSide}
+	\Name{\ColorHighlight}{Hrițcan Alexandru}{Student}{21 years old}
+
+	%%% Contact
+	\TextSeparator{\ColorHighlight}{Contact}
+	\begin{DoubleColumns}
+		\begin{ItemList}{\ColorHighlight}
+			\item [\Large\faAt] \href{mailto:alexandru.hritcan@gmail.com}{alexandru.hritcan@gmail.com}
+      \item [\Large\faMobile] \href{tel:+40746427309}{+40 746 427 309}
+		\end{ItemList}
+		\nextcolumn
+		\begin{ItemList}{\ColorHighlight}
+			\item [\Large\faGithub] \href{https://github.com/halexandru11}{github.com/halexandru11}
+			\item [\Large\faLinkedinSquare] \href{https://www.linkedin.com/in/alex-hritcan}{linkedin.com/in/alex-hritcan}
+		\end{ItemList}
+	\end{DoubleColumns}
+
+	%%% Interests
+	\TextSeparator{\ColorHighlight}{Interests}
+	\begin{TripleColumns}
+		\begin{ItemList}{\ColorHighlight}
+			\item [] Formula 1
+		\end{ItemList}
+		\nextcolumn
+		\begin{ItemList}{\ColorHighlight}
+			\item [] Mystery Movies
+    \end{ItemList}
+		\nextcolumn
+		\begin{ItemList}{\ColorHighlight}
+			\item [] Acoustic Music
+		\end{ItemList}
+	\end{TripleColumns}
+	\begin{TripleColumns}
+		\begin{ItemList}{\ColorHighlight}
+			\item [] Lego Technic
+		\end{ItemList}
+		\nextcolumn
+		\begin{ItemList}{\ColorHighlight}
+			\item [] Neovim
+    \end{ItemList}
+		\nextcolumn
+		\begin{ItemList}{\ColorHighlight}
+			\item [] Robotics
+		\end{ItemList}
+	\end{TripleColumns}
+\end{TopBar}
+
+
+
+%----------------------------------------------------------------------------------------
+%	SIDE BAR
+%----------------------------------------------------------------------------------------
+\begin{SideBar}{\ColorBackground}{\ColorTextSide}
+
+	%%% Soft skills
+	\TextSeparatorBis{\ColorHighlight}{\faUser}{Soft skills}
+
+	\Label{\ColorHighlight}{Problem solving}
+	\Label{\ColorHighlight}{Open-minded}
+
+	\vspace*{0.1cm}
+
+  \Label{\ColorHighlight}{Adaptability}
+  \Label{\ColorHighlight}{Self discipline}
+
+	\vspace*{0.1cm}
+
+	\Label{\ColorHighlight}{Stress management}
+  \Label{\ColorHighlight}{Patience}
+
+	\vspace*{1cm}
+
+	%%% Hard skills
+	\TextSeparatorBis{\ColorHighlight}{\faGears}{Hard skills}
+	\begin{ItemList}{\ColorHighlight}
+    \item [\faCode] C/C++ $\textcolor{GreenIT}{\bullet}$ Python $\textcolor{GreenIT}{\bullet}$ Typescript
+    \item [\faFileCodeO]  Flutter $\textcolor{GreenIT}{\bullet}$ NextJS $\textcolor{GreenIT}{\bullet}$ React
+    \item [\faBug]  Debugging Code
+		\item [\faGear]  Configuring Neovim
+    \item [\faDatabase]  SQLite $\textcolor{GreenIT}{\bullet}$ FirebaseFirestore
+    \item [\faUsers]  Agile (Scrum Master)
+	\end{ItemList}
+
+	\vspace*{1cm}
+
+	%%% Spider
+	\TextSeparatorBis{\ColorHighlight}{\faTerminal}{Programming}
+
+% \\Dart C\# Java
+
+	\begin{SpiderDiagram}{\ColorTextSide}{\ColorHighlight}
+    \addSkill{C/C++}{4}
+		\addSkill{Python}{2}
+    \addSkill{Dart}{3}
+		\addSkill{Java}{1}
+    \addSkill{Typescript}{3}
+	\end{SpiderDiagram}
+
+	\vspace*{1cm}
+
+	%%% Languages
+	\TextSeparatorBis{\ColorHighlight}{\faLanguage}{Languages}
+
+	\begin{SkillGauges}{\ColorHighlight}
+		\addGauge{Romanian (native)}{5}
+		\addGauge{English}{3}
+	\end{SkillGauges}
+\end{SideBar}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Picture
+%----------------------------------------------------------------------------------------
+\DefineProfile{\ColorOther}{\ColorTextSide}{img/me.jpg}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Main
+%----------------------------------------------------------------------------------------
+\begin{MainPart}
+
+	%%% Experience 
+	\MainTitleBis{\ColorHighlight}{\ColorTextMain}{Experience}{\faSuitcase}
+	\Experience
+	{\ColorHighlight}
+  {Web \& Mobile Developer}
+	{AlgoMediaSoft}
+	{2023-\faUndo}
+	{
+    $\textcolor{GreenIT}{\bullet}$ Implemented presentation website for the company using NextJS\\
+    $\textcolor{GreenIT}{\bullet}$ Build quick interventions mobile app using Flutter for the company's agents.\\ 
+    \hspace{0.3cm}$\textcolor{GreenIT}{\circ}$ It features full screen alerts with details of the intervention.\\
+    \hspace{0.3cm}$\textcolor{GreenIT}{\circ}$ Sets the route in Google Maps and can be accessed with one click.\\
+    \hspace{0.3cm}$\textcolor{GreenIT}{\circ}$ Reduced intervention time from 20 to 13 minutes.
+	}
+
+	%%% Education
+	\MainTitleBis{\ColorHighlight}{\ColorTextMain}{Education}{\faGraduationCap}
+	\Experience
+	{\ColorHighlight}
+	{Bachelor - Computer Science}
+  {Alexandru Ioan Cuza University}
+	{2021-\faUndo}
+	{
+		$\textcolor{GreenIT}{\bullet}$ Excelled in Data Structures, achieving 8th place out of 400 students.\\
+		$\textcolor{GreenIT}{\bullet}$ Found courses on Algorithm Design, Object-Oriented Programming, and Computer Networks highly engaging.
+  }
+	\Experience
+	{\ColorHighlight}
+  {Computer Science \& Mathematics}
+	{Eudoxiu Hurmuzachi High School}
+	{2017-2021}
+	{
+    $\textcolor{GreenIT}{\bullet}$ Achieved 42nd place \& bronze medal in National Olympiad in Informatics, ranking among the top 110 students nationwide, out of 1000+ participants.\\
+    $\textcolor{GreenIT}{\bullet}$ Won 2nd prize in the 2020 Physics National Contest PHI and 3rd prize in 2019.
+	}
+
+	%%% Projects
+	\MainTitleBis{\ColorHighlight}{\ColorTextMain}{Projects}{\faGithub}
+	\Experience
+	{\ColorHighlight}
+	{InterSchem}
+	{Front-End in C++}
+	{2021}
+	{
+		$\textcolor{GreenIT}{\bullet}$ Developed C++ SFML application for UI-based C++ algorithms creation.\\
+		$\textcolor{GreenIT}{\bullet}$ Integrated algorithm running visualization, error handling, and saving/loading.
+	}
+	\Experience
+	{\ColorHighlight}
+	{TomatoGuard}
+	{Machine Learning \& Front-End}
+	{2023}
+	{
+    $\textcolor{GreenIT}{\bullet}$ Created Prophet model with Python to detect potential tomato diseases.\\
+		$\textcolor{GreenIT}{\bullet}$ Designed React website for uploading CSV files and receiving the results.
+	}
+	\Experience
+	{\ColorHighlight}
+	{Traveling Salesman Problem}
+	{Research project}
+	{2022}
+	{
+		$\textcolor{GreenIT}{\bullet}$ Implemented C++ Genetic Algorithm for Traveling Salesman Problem.\\
+		$\textcolor{GreenIT}{\bullet}$ Authored paper comparing Genetic Algorithm with Simulated Annealing.
+	}
+
+	\MainTitleBis{\ColorHighlight}{\ColorTextMain}{Extracurricular}{\faStar}
+	\Experience
+	{\ColorHighlight}
+  {Sirius Physics Group}
+	{Member \& Assistant}
+  {2018-2020}
+  {
+    $\textcolor{GreenIT}{\bullet}$ Engaged in weekly physics seminars and debates.\\
+    $\textcolor{GreenIT}{\bullet}$ Instructed younger students in Arduino programming.
+  }
+
+
+\end{MainPart}
+
+
+
+\end{document}
