@@ -375,6 +375,19 @@
 	\end{minipage}\\\vspace*{0.15cm}
 }
 
+%%% DoubleInterests
+\newenvironment{DoubleInterests}{
+  %%%%%%%%% Use this command to split
+  \newcommand{\nextcolumn}{\end{center}\end{minipage}\hfill\begin{minipage}[t]{0.5\textwidth}\begin{center}}
+
+  \begin{minipage}[t]{0.5\textwidth-0.5\margin}
+    \begin{center}
+    }{
+    \end{center}
+  \end{minipage}\\\vspace*{0.15cm}
+}
+
+
 %%% Label
 \newcommand{\Label}[2]{% Highlight color, Text
 	\tikz[baseline]\node[anchor=base,draw=#1,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex, thick]{#2};
